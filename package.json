@@ -1,16 +1,33 @@
 {
-  "name": "unplugin-v-anything",
+  "name": "@v-anything/unplugin-v-anything",
+  "type": "module",
   "version": "0.0.1",
   "description": "",
   "author": "",
   "license": "MIT",
+  "homepage": "https://github.com/v-anything/unplugin-v-anything",
   "keywords": [
-    "vue"
+    "vue",
+    "vite"
   ],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "play": "npm -C playground run dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "tsup": "^8.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.22.0-beta.3",

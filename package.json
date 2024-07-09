@@ -1,0 +1,19 @@
+{
+  "name": "unplugin-v-anything",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "vue"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "2.22.0-beta.3",
+    "eslint": "^9.6.0"
+  }
+}
